@@ -54,6 +54,11 @@ class ViewModel: ObservableObject {
         while lineNumber < lines.count {
             let line = lines[lineNumber]
 
+            if line.starts(with: "#") {
+                lineNumber += 1
+                continue
+            }
+
             if let match = line.wholeMatch(of: movRegex) {
                 mov(value: match.output.1, destination: match.output.2)
             } else if let match = line.wholeMatch(of: addRegex) {
