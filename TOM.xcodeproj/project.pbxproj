@@ -12,6 +12,8 @@
 		FEA0CF99297CFC24009FE385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEA0CF98297CFC24009FE385 /* Assets.xcassets */; };
 		FEA0CF9C297CFC24009FE385 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEA0CF9B297CFC24009FE385 /* Preview Assets.xcassets */; };
 		FEA0CFA5297CFD8F009FE385 /* TOMDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA0CFA4297CFD8F009FE385 /* TOMDocument.swift */; };
+		FEA0CFA7297D0459009FE385 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA0CFA6297D0459009FE385 /* ViewModel.swift */; };
+		FEA0CFA9297D0C26009FE385 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA0CFA8297D0C26009FE385 /* RegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		FEA0CF9D297CFC24009FE385 /* TOM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TOM.entitlements; sourceTree = "<group>"; };
 		FEA0CFA3297CFC91009FE385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FEA0CFA4297CFD8F009FE385 /* TOMDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOMDocument.swift; sourceTree = "<group>"; };
+		FEA0CFA6297D0459009FE385 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		FEA0CFA8297D0C26009FE385 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				FEA0CF94297CFC1D009FE385 /* TOMApp.swift */,
 				FEA0CF96297CFC1D009FE385 /* ContentView.swift */,
 				FEA0CFA4297CFD8F009FE385 /* TOMDocument.swift */,
+				FEA0CFA6297D0459009FE385 /* ViewModel.swift */,
+				FEA0CFA8297D0C26009FE385 /* RegisterView.swift */,
 				FEA0CF98297CFC24009FE385 /* Assets.xcassets */,
 				FEA0CF9D297CFC24009FE385 /* TOM.entitlements */,
 				FEA0CF9A297CFC24009FE385 /* Preview Content */,
@@ -145,7 +151,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEA0CF97297CFC1D009FE385 /* ContentView.swift in Sources */,
+				FEA0CFA9297D0C26009FE385 /* RegisterView.swift in Sources */,
 				FEA0CFA5297CFD8F009FE385 /* TOMDocument.swift in Sources */,
+				FEA0CFA7297D0459009FE385 /* ViewModel.swift in Sources */,
 				FEA0CF95297CFC1D009FE385 /* TOMApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
