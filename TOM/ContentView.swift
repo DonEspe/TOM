@@ -8,19 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Binding var document: TOMDocument
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationSplitView {
+            Text("Data")
+        } detail: {
+            VSplitView {
+                TextEditor(text: $document.text)
+                    .font(.system(size: 18).monospaced())
+                    .scrollContentBackground(.hidden)
+                    .padding()
+                TextEditor(text: .constant("Output"))
+                    .font(.system(size: 18).monospaced())
+                    .scrollContentBackground(.hidden)
+                    .foregroundStyle(.secondary)
+                    .padding()
+            }
         }
-        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(document: .constant(TOMDocument()))
     }
 }
